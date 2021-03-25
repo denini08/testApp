@@ -26,3 +26,5 @@ This project uses the Gradle build system. You don't need an IDE to build and ex
     * Run the configuration
 
 If you are using Android Studio, the *Run* window will show the test results.
+
+https://github.com/android/testing-samples/tree/main/ui/espresso
