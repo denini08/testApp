@@ -13,4 +13,4 @@ jobs:
           api-level: 29
           arch: x86
           disable-animations: true
-          script: sysctl -a | grep cpu #./gradlew connectedAndroidTest --stacktrace
+          script: ./gradlew connectedAndroidTest --stacktrace
