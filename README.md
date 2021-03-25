@@ -1,6 +1,6 @@
 # Sample for FragmentScenario with Espresso
 
-*A simple example that shows use of FragmentScenario with Espresso.*
+*A simple example that shows use of FragmentScenario with Espresso.  *
 
 This project uses the Gradle build system. You don't need an IDE to build and execute it but Android Studio 3.4 is recommended.
 
