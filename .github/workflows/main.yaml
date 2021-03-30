@@ -8,9 +8,11 @@ jobs:
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
       - name: Instrumentation Tests
-        uses: denini08/shaker-action@v0.0.2.4
+        uses: denini08/shaker-action@v0.0.2.6
         with:
           api-level: 29
           arch: x86
           disable-animations: true
-          script: ./gradlew connectedAndroidTest --stacktrace
+          adb-run-tests: adb shell am instrument -w -r    -e package com.example.android.testing.espresso.fragmentscenario -e debug false com.example.android.testing.espresso.FragmentScenarioSample.test/androidx.test.runner.AndroidJUnitRunner
+          install-command: ./gradlew installDebug installDebugAndroidTest
+          #script: ./gradlew connectedAndroidTest --stacktrace
