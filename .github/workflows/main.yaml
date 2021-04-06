@@ -2,7 +2,7 @@ name: Build and Test
 on: [push]
 jobs:
   androidTest:
-    runs-on: macOS-latest 
+    runs-on: macOS-latest  
     steps:
       - uses: actions/checkout@v2
       - name: Instrumentation Tests
